@@ -1,4 +1,4 @@
-const peoplesItems = [
+const humanItems = [
   {
     img: './img/customers/customer-1.jpg',
     alt: 'Customer photo',
@@ -133,27 +133,27 @@ btnNavEl.addEventListener('click', function () {
   headerEl.classList.toggle('nav-open');
 });
 
-const peoplesImgs = document.querySelector('.peoples-imgs');
+const humanImgs = document.querySelector('.human-imgs');
 const logoImgs = document.querySelector('.logos');
 const testimonialImgs = document.querySelector('.testimonials');
 const galleryImgs = document.querySelector('.gallery');
 
 window.addEventListener('DOMContentLoaded', function () {
-  displayPeoplesItems(peoplesItems);
+  displayHumanItems(humanItems);
   displaylogItems(logoItems);
   displaytestimonialItems(testimonialItems);
   displaygalleryItems(galleryItems);
 });
 
-const displayPeoplesItems = (Item) => {
-  let peoplesItem = Item.map((item) => {
+const displayHumanItems = (Item) => {
+  let humanItem = Item.map((item) => {
     return `
       <img
         src=${item.img}
         alt=${item.alt}
       />`;
   });
-  peoplesImgs.innerHTML = peoplesItem;
+  humanImgs.innerHTML = humanItem;
 };
 
 const displaylogItems = (Item) => {
