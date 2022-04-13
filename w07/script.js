@@ -60,6 +60,15 @@ getUsers();
 // getRandomUser();
 // getRandomUser();
 
+const changeBtnText = () => {
+addUserBtn.textContent = `Add Users (${config.numRandom})👱‍♂️`;
+doubleBtn.textContent = `Raise Money * ${config.ratio}💰`;
+showMillionariesBtn.textContent = `Show > ${config.showCondition}💵`;
+}
+
+changeBtnText();
+
+
 const getRandomfiveUser = async () => {
   for (let i = 0; i < config.numRandom; i++) {
     const res = await fetch('https://randomuser.me/api');
