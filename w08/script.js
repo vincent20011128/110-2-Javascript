@@ -108,7 +108,13 @@ const sortByRichest = () =>　{
   updateDOM();
 }
 
+// const calculateWealth = () => {
+//   const wealth = data.reduce();
+//   main.innerHTML = main.innerHTML + 
+// }
+
 addUserBtn.addEventListener('click', getRandomfiveUser);
 doubleBtn.addEventListener('click', doubleMoney);
 showMillionairesBtn.addEventListener('click', showMillionaires);
 sortBtn.addEventListener('click', sortByRichest);
+calculateBtn.addEventListener('click',calculateWealth);

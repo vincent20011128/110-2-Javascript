@@ -6,10 +6,11 @@
 
 ### W08-P2: add w08 md link in README.md
 
-![]()
+![](0413-3.PNG)
 
-![]()
+![](0413-4.PNG)
 
 ### w08-P3:SortByRichest
 
 ![](0413-5.PNG)
+![]()
