@@ -2,7 +2,7 @@ const main = document.querySelector('#main');
 const addUserBtn = document.querySelector('#add-user');
 const doubleBtn = document.querySelector('#double');
 const showMillionairesBtn = document.querySelector('#show-millionaires');
-const sortBtn = document.querySelector('#sortBtn');
+const sortBtn = document.querySelector('#sort');
 const calculateBtn = document.querySelector('#calculateBtn');
 
 let data = [];
@@ -63,7 +63,7 @@ getUsers();
 const changeBtnText = () => {
     addUserBtn.textContent = `Add Users (${config.numRandom})👱‍♂️`;
     doubleBtn.textContent = `Raise Money * ${config.ratio}💰`;
-    showMillionariesBtn.textContent =`show > ${config.showCondition} 💵`;
+    showMillionairesBtn.textContent =`show > ${config.showCondition} 💵`;
 }
 
 changeBtnText();
@@ -100,6 +100,15 @@ const showMillionaires = () => {
   updateDOM(filteredData);
 };
 
+const sortByRichest = () =>　{
+  data.sort ( ( a,b) => {
+    return b.money - a.money
+  });
+
+  updateDOM();
+}
+
 addUserBtn.addEventListener('click', getRandomfiveUser);
 doubleBtn.addEventListener('click', doubleMoney);
 showMillionairesBtn.addEventListener('click', showMillionaires);
+sortBtn.addEventListener('click', sortByRichest);
