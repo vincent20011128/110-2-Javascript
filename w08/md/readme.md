@@ -24,5 +24,6 @@
 
 ### W08-P5: Count wealth total for all users money
 
-![進度已完成85%]()
+進度已完成 95%
+![](0413-9.jpg)
 ![](0413-10.jpg)
