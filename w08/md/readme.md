@@ -13,4 +13,16 @@
 ### w08-P3:SortByRichest
 
 ![](0413-5.PNG)
+
 ![](0413-6.PNG)
+
+### W08-P4: trace total using offline W3School
+
+![]()
+
+![]()
+
+### W08-P5: Count wealth total for all users money
+
+![](0413-7.PNG)
+![]()
