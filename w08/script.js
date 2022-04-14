@@ -3,7 +3,7 @@ const addUserBtn = document.querySelector('#add-user');
 const doubleBtn = document.querySelector('#double');
 const showMillionairesBtn = document.querySelector('#show-millionaires');
 const sortBtn = document.querySelector('#sort');
-const calculateBtn = document.querySelector('#calculateBtn');
+const calculateBtn = document.querySelector('#calculate');
 
 let data = [];
 
@@ -49,10 +49,10 @@ const getRandomUser = async () => {
 };
 
 const getUsers = () => {
-  for(let i = 0; i < config.numRandom; i++){
+  for (let i = 0; i < config.numRandom; i++) {
     getRandomUser();
   }
-}
+};
 
 getUsers();
 
@@ -61,10 +61,10 @@ getUsers();
 // getRandomUser();
 
 const changeBtnText = () => {
-    addUserBtn.textContent = `Add Users (${config.numRandom})👱‍♂️`;
-    doubleBtn.textContent = `Raise Money * ${config.ratio}💰`;
-    showMillionairesBtn.textContent =`show > ${config.showCondition} 💵`;
-}
+  addUserBtn.textContent = `Add Users (${config.numRandom})👱‍♂️`;
+  doubleBtn.textContent = `Raise Money * ${config.ratio}💰`;
+  showMillionairesBtn.textContent = `show > ${config.showCondition} 💵`;
+};
 
 changeBtnText();
 
@@ -100,21 +100,30 @@ const showMillionaires = () => {
   updateDOM(filteredData);
 };
 
-const sortByRichest = () =>　{
-  data.sort ( ( a,b) => {
-    return b.money - a.money
+const sortByRichest = () => {
+  data.sort((a, b) => {
+    return b.money - a.money;
   });
 
   updateDOM();
-}
+};
+
+const calculatewealth = () => {
+  const wealth = data.reduce(function (total, number) {
+    return total + number.money;
+  }, 0);
+  main.innerHTML += `<h3> Total Wealth: <strong>${formatMoney(
+    wealth
+  )}</strong></h3>`;
+};
 
 // const calculateWealth = () => {
 //   const wealth = data.reduce();
-//   main.innerHTML = main.innerHTML + 
+//   main.innerHTML = main.innerHTML +
 // }
 
 addUserBtn.addEventListener('click', getRandomfiveUser);
 doubleBtn.addEventListener('click', doubleMoney);
 showMillionairesBtn.addEventListener('click', showMillionaires);
 sortBtn.addEventListener('click', sortByRichest);
-calculateBtn.addEventListener('click',calculateWealth);
+calculateBtn.addEventListener('click', calculatewealth);
