@@ -20,7 +20,7 @@
 
 ![](0413-7.PNG)
 
-![]()
+![](0413-8.jpg)
 
 ### W08-P5: Count wealth total for all users money
 
