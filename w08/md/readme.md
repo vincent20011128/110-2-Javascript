@@ -18,11 +18,11 @@
 
 ### W08-P4: trace total using offline W3School
 
-![]()
+![](0413-7.PNG)
 
 ![]()
 
 ### W08-P5: Count wealth total for all users money
 
-![](0413-7.PNG)
+![]()
 ![]()
