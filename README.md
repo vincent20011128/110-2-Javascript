@@ -11,3 +11,4 @@
 [期中開放考題](https://github.com/vincent20011128/110-2-Javascript/blob/main/%E6%9C%9F%E4%B8%AD%E8%80%83%E9%96%8B%E6%94%BE%E9%A1%8C/hw02_omnifood_210410139/md/readme..md)<br>
 [w010 midterm](https://github.com/vincent20011128/110-2-Javascript/tree/main/midterm_210410139)<br>
 [w11](https://github.com/vincent20011128/110-2-Javascript/blob/main/w11/sidebar-starter/w11.md)
+[w12](https://github.com/vincent20011128/110-2-Javascript/blob/main/w12/md/w12_210410139.md)
