@@ -13,3 +13,4 @@
 [w11](https://github.com/vincent20011128/110-2-Javascript/blob/main/w11/sidebar-starter/w11.md)<br>
 [w12](https://github.com/vincent20011128/110-2-Javascript/blob/main/w12/md/w12_210410139.md)<br>
 [w13](https://github.com/vincent20011128/110-2-Javascript/blob/main/w13/w13_210410139.md)<br>
+[w14](https://github.com/vincent20011128/110-2-Javascript/blob/main/w14/w14_210410139.md)<br>
